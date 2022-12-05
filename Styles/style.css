@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img1 {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba( 0,0,0,1)) , url(/Assets/Background\ img\ POS\ project.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 
+    
+   
+}
+
+#heading {
+    font-size: 70px;
+    color: #FDF7FF;
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    
+}
+
+
