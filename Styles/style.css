@@ -19,18 +19,33 @@
    
 }
 
-#heading {
-    font-size: 70px;
+.p-text{
+    font-size: larger;
     color: #FDF7FF;
-    margin: auto;
-    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-     
-    
-    
+    margin: auto;
+    padding-right: 5rem;
+    padding-left: 5rem;
 }
+
+#heading {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 72px;
+    color: #FDF7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+ 
+}
+
+.home-text{
+    margin-top: 270px;
+}
+
+
 
 
 main{
