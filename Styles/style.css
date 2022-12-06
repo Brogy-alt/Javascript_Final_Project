@@ -10,6 +10,8 @@
 
 body{
     overflow-x: hidden;
+    
+
 }
 /* background images */
 /* landing page img */
@@ -103,8 +105,12 @@ main{
 
 /* cards */
 .card-img-top{
-    height: 70%;
-    
+    height: 60vh;
+
+}
+
+#product-cards{
+    height: 100vh;
 }
 
 /* column */
