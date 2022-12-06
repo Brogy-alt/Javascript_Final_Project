@@ -34,10 +34,21 @@ body{
     
    
 }
+/* Admin page */
+/* .img3 {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(176, 175, 175, 0), rgba( 0,0,0,1)) , url(/Assets/Imgs/Javascript\ Project\ Img3jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 
+    
+   
+} */
 /* landing page text */
 .home-p-text{
-    font-size: larger;
-    color: #FDF7FF;
+    font-size: 20px;
+    color: #c6c6c6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,8 +85,8 @@ body{
 }
 /* Product Page P text */
 .product-p-text {
-        font-size: larger;
-        color: #FDF7FF;
+        font-size: 20px;
+        color:#c6c6c6 ;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -84,13 +95,20 @@ body{
         padding-left: 5rem;
     }
 
-
-
-
 main{
     height: 100vh;
     width: 100vw;
 }
+
+
+/* cards */
+.card-img-top{
+    height: 70%;
+    
+}
+
+/* column */
+
 
 body{
     @media (min-width: 300px) {    
