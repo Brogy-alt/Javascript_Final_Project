@@ -8,18 +8,34 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+/* background images */
+/* landing page img */
 .img1 {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba( 0,0,0,1)) , url(/Assets/Background\ img\ POS\ project.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba( 0,0,0,1)) , url(/Assets/Imgs/Background\ img\ POS\ project.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 
     
    
 }
-
-.p-text{
+/* product page img */
+.img2 {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(176, 175, 175, 0), rgba( 0,0,0,1)) , url(/Assets/Imgs/Javascript\ Project\ Img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 
+    
+   
+}
+/* landing page text */
+.home-p-text{
     font-size: larger;
     color: #FDF7FF;
     display: flex;
@@ -29,8 +45,8 @@
     padding-right: 5rem;
     padding-left: 5rem;
 }
-
-#heading {
+/* landing page text */
+#heading-homepage {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 72px;
     color: #FDF7FF;
@@ -40,10 +56,33 @@
     margin: auto;
  
 }
-
+/* landing page text */
 .home-text{
     margin-top: 270px;
 }
+
+/* Product page text*/
+#heading-productpage {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 72px;
+    color: #FDF7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+ 
+}
+/* Product Page P text */
+.product-p-text {
+        font-size: larger;
+        color: #FDF7FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
 
 
 
@@ -52,3 +91,12 @@ main{
     height: 100vh;
     width: 100vw;
 }
+
+body{
+    @media (min-width: 300px) {    
+        {
+            width: 100%;
+        }
+    }
+}
+
