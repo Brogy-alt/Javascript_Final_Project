@@ -1,4 +1,5 @@
 // Sample data: example
+
 let products = JSON.parse(localStorage.getItem('products ')) ?
 JSON.parse(localStorage.getItem('products ')) : [
     
@@ -25,7 +26,7 @@ JSON.parse(localStorage.getItem('products ')) : [
     },
 ];
 
-
+// For admin
 function displayProducts(){
 let tbody = document.querySelector('tbody');
     Object.keys(products).forEach( (item)=>{

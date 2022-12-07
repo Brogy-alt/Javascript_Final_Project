@@ -104,14 +104,21 @@ main{
 
 
 /* cards */
-.card-img-top{
-    height: 60vh;
+/* .card-img-top{
+    width: 80px;
+    height: 200px;
+    
 
-}
+} */
 
 #product-cards{
-    height: 100vh;
+    display: flex;
+    padding: 2rem;
+    height: 20rem;
+
 }
+
+
 
 /* column */
 
