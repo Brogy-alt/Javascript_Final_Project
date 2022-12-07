@@ -27,15 +27,18 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
 
-                        <a class="nav-link active" aria-current="product-nav" href="/index.html"><i
-                                class="fa-sharp fa-solid fa-house-user"></i>Home</a></i>
+                        <a class="nav-link active" aria-current="admin-nav" href="/index.html">
+                            <i class="fa-sharp fa-solid fa-folder"></i>Home</a>
                     </li>
-                    <a class="nav-link active" aria-current="admin-nav" href="/Html/admin.html">
+                    <a class="nav-link active" aria-current="admin-nav" href="/Html/product.html">
+                        <i class="fa-sharp fa-solid fa-folder"></i>Products</a>
+                    </li>
+                        <a class="nav-link active" aria-current="admin-nav" href="/Html/admin.html">
                         <i class="fa-sharp fa-solid fa-folder"></i>Admin</a>
                     </li>
-                    <a class="nav-link active" aria-current="checkout-nav" href="/Html/checkout.html">
+                        <a class="nav-link active" aria-current="checkout-nav" href="/Html/checkout.html">
                         <i class="fa-sharp fa-solid fa-folder"></i>Checkout</a>
-
+                       
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"></a>
@@ -45,8 +48,8 @@
         </div>
 </header>
 
-<body>
-    <section class="product-page">
+<body class="bg-dark">
+    <section id="products">
         <div class="container-fluid">
             <div class="row d-flex flex-column flex-md-row">
                 <div class="img2">
@@ -59,26 +62,13 @@
             </div>
 
             <!-- Beats -->
-            <div class="container-products">
-                <div class="row">
-                    <div class="col-3 flex-wrap w-100">
-                        <section id="product-cards">
-                            <!-- <div class="card-group"> -->
-                                <!-- <div class="card"> -->
-                                    <!-- <img src="/Assets/Imgs/Juice wrld type beat img.jpg" class="card-img-top"
-                    alt="Juice wrld img" />
-                <div class="card-body">
-                    <h5 class="card-title">Juice Wrld Type Beats</h5>
-                    <p class="card-text">
-                    </p>
-                    <p class="card-btn">
-                            <button id="submit">Add to checkout</button>
-                            <button id="display">Display</button> -->
+            <div id="card">
+                <div class="row" id="card-row" >
+                    <div class="col-4 w-100 bg-danger ">
 
-
-                                    </p>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
 
                                 <!-- <img src="/Assets/Imgs/lil uzi vert type beat.jpg" class="card-img-top"
                     alt="Lil uzi vert img" />
@@ -165,6 +155,7 @@
         </div>
         </div>
     </section>  -->
+    
 
 
 

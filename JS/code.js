@@ -1,5 +1,4 @@
 // Sample data: example
-
 let products = JSON.parse(localStorage.getItem('products ')) ?
 JSON.parse(localStorage.getItem('products ')) : [
     
@@ -7,21 +6,21 @@ JSON.parse(localStorage.getItem('products ')) : [
         id:1,
         product:"Beat",
         beattype:"Juice Wrld",
-        price:30
+        price:"$20"
 
     },
     {
         id:2,
         product:"Beat",
         beattype:"Lil Uzi Vert",
-        price:30
+        price:"$20"
 
     },
     {
         id:3,
         product:"Beat",
-        beattype:"Iann Doir",
-        price:30
+        beattype:"Trippie Redd",
+        price:"$20"
 
     },
 ];

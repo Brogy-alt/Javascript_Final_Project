@@ -10,6 +10,7 @@
 
 body{
     overflow-x: hidden;
+    background-color: black;
     
 
 }
@@ -111,17 +112,15 @@ main{
 
 } */
 
-#product-cards{
-    display: flex;
-    padding: 2rem;
-    height: 20rem;
-
-}
-
 
 
 /* column */
 
+
+.card-img-top{
+        width:18rem;
+        height: 25rem;
+}
 
 body{
     @media (min-width: 300px) {    
@@ -130,4 +129,3 @@ body{
         }
     }
 }
-
