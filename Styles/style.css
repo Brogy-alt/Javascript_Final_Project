@@ -105,12 +105,9 @@ main{
 
 
 /* cards */
-/* .card-img-top{
-    width: 80px;
-    height: 200px;
-    
-
-} */
+.card{
+    gap: 5rem;
+}
 
 
 
