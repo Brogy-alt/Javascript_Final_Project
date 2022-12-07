@@ -110,6 +110,8 @@ let tbody = document.querySelector('tbody');
                     <td>${products[item].product}</td>
                     <td>${products[item].beattype}</td>
                     <td>${products[item].price}</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+
                 </tr>
             `
         }
