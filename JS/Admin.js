@@ -70,7 +70,7 @@ JSON.parse(localStorage.getItem('products ')) : [
         id: 9,
         style:"Spiral",
         product: "Kit",
-        beattype: "Melody kit",
+        beattype: "Midi kit",
         price: "$50",
         image: "",
       },

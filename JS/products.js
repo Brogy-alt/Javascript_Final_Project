@@ -78,10 +78,10 @@ let products = JSON.parse(localStorage.getItem("products "))
         id: 9,
         style:"Spiral",
         product: "Kit",
-        beattype: "Melody kit",
+        beattype: "Midi kit",
         price: "$50",
         image: "/Assets/Imgs/Melody Kit img.png",
-        Audio: ""
+        Audio: "/Assets/Audio/spiral.mp3"
       },
       {
         id: 10,
@@ -90,7 +90,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         beattype: "Melody kit",
         price: "$50",
         image: "/Assets/Imgs/Melody Kit img2.png",
-        Audio: ""
+        Audio: "/Assets/Audio/clouds.mp3"
       },
       {
         id: 11,
@@ -99,7 +99,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         beattype: "Melody kit",
         price: "$50",
         image: "/Assets/Imgs/Melody Kit img5.png",
-        Audio: ""
+        Audio: "/Assets/Audio/costal.mp3"
       },
       {
         id: 12,
@@ -108,7 +108,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         beattype: "Melody kit",
         price: "$50",
         image: "/Assets/Imgs/Melody Kit img4.png",
-        Audio: ""
+        Audio: "/Assets/Audio/invasion.mp3"
       },
     ];
 
