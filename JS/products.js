@@ -143,7 +143,7 @@ function displayCards() {
         <audio src="..${products[item].Audio}" id="myAudio${products[item].id}"></audio>
         <button class="myBtn bg-dark text-light" onClick="playMyAudio(${products[item].id})">Play Audio</button>
         <button class="myBtn bg-dark text-light float-md-end" onClick="stopMyAudio(${products[item].id})">Stop Audio</button>
-        <a href="#" class="checkout-button btn btn-dark d-flex align-items-center justify-content-center">Add to checkout</a>
+        <a href="/Html/checkout.html" class="checkout-button btn btn-dark d-flex align-items-center justify-content-center">Add to checkout</a>
       </div>
     </div>
         `
@@ -156,6 +156,12 @@ displayCards();
 // localStorage.setItem('products', JSON.stringify(product-cards));
 function playMyAudio(id){
   document.getElementById(`myAudio${id}`).play();
+  Object.keys(products).forEach((item) => {
+    if (products[item].id !== id) {
+      stopMyAudio(products[item].id)
+    }
+  }
+  )
   
 }
 function stopMyAudio(id){
