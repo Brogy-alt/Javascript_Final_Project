@@ -3,7 +3,7 @@ let products = JSON.parse(localStorage.getItem("products "))
   : [
       {
         id: 1,
-        style: "Juice Wrld type beats",
+        style: "Juice Wrld type beat",
         product: "Beat",
         beattype: "melodic",
         price: "$20",
@@ -13,39 +13,39 @@ let products = JSON.parse(localStorage.getItem("products "))
       },
       {
         id: 2,
-        style:"Lil Uzi Vert type beats",
+        style:"Lil Uzi Vert type beat",
         product: "Beat",
         beattype: "hyper-pop",
         price: "$20",
         image: "/Assets/Imgs/lil uzi vert type beat.jpg",
-        Audio: ""
+        Audio: "/Assets/Audio/Lil uzi vert.mp3"
       },
       {
         id: 3,
-        style:"Trippie Redd type beats",
+        style:"Trippie Redd type beat",
         product: "Beat",
         beattype: "hyper-pop",
         price: "$20",
         image: "/Assets/Imgs/Trippie redd type beat.jpg",
-        Audio: ""
+        Audio: "/Assets/Audio/Trippie Redd.mp3"
       },
       {
         id: 4,
-        style:"Dro Kenji type beats",
+        style:"Dro Kenji type beat",
         product: "Beat",
         beattype: "melodic",
         price: "$20",
         image: "/Assets/Imgs/dro kenji type beat.jpg",
-        Audio: ""
+        Audio: "/Assets/Audio/Dro kenji.mp3"
       },
       {
         id: 5,
-        style:"Iann Dior type beats",
+        style:"Iann Dior type beat",
         product: "Beat",
         beattype: "melodic",
         price: "$20",
         image: "/Assets/Imgs/Iann doir type beat.jpg",
-        Audio: ""
+        Audio: "/Assets/Audio/Iann dior.mp3"
       },
       {
         id: 6,
@@ -54,16 +54,16 @@ let products = JSON.parse(localStorage.getItem("products "))
         beattype: "melodic",
         price: "$20",
         image: "/Assets/Imgs/lil yatchy type beat.jpg",
-        Audio: ""
+        Audio: "/Assets/Audio/Lil yatchy.mp3"
       },
       {
         id: 7,
-        style:"Yeat type beats",
+        style:"Central Cee",
         product: "Beat",
-        beattype: " edm/melodic ",
+        beattype: "Drill",
         price: "$20",
-        image: "/Assets/Imgs/yeat type beat img.jpg",
-        Audio: ""
+        image: "/Assets/Imgs/Central cee.jpg",
+        Audio: "/Assets/Audio/Central Cee.mp3"
       },
       {
         id: 8,
@@ -72,7 +72,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         beattype: "hyperpop",
         price: "$20",
         image: "/Assets/Imgs/SSG Kobe type beat.jpg",
-        Audio: ""
+        Audio: "/Assets/Audio/SSG kobe.mp3"
       },
       {
         id: 9,
@@ -118,7 +118,7 @@ function displayCards() {
       console.log(`${item}: ${products[item]}`);
       card.innerHTML += 
       ` 
-      <div class="card col-3 text-light bg-black border-light">
+      <div class="card col-3 text-light bg-black border-dark">
       <img src="${products[item].image}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">${products[item].style}</h5>
@@ -141,9 +141,11 @@ displayCards();
 // localStorage.setItem('products', JSON.stringify(product-cards));
 function playMyAudio(id){
   document.getElementById(`myAudio${id}`).play();
+  
 }
 function stopMyAudio(id){
   document.getElementById(`myAudio${id}`).pause();
   document.getElementById(`myAudio${id}`).currentTime = 0;
 
 }
+
