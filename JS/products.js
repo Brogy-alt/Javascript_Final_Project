@@ -130,8 +130,8 @@ function displayCards() {
         <p class="card-text">${products[item].beattype}</p>
         <p class="card-text">${products[item].price}</p>
         <audio src="..${products[item].Audio}" id="myAudio${products[item].id}"></audio>
-        <button class="myBtn border-light bg-dark text-light" onClick="playMyAudio(${products[item].id})">Play Audio</button>
-        <button class="myBtn border-light bg-dark text-light" onClick="stopMyAudio(${products[item].id})">Stop Audio</button>
+        <button class="myBtn bg-dark text-light" onClick="playMyAudio(${products[item].id})">Play Audio</button>
+        <button class="myBtn bg-dark text-light float-md-end" onClick="stopMyAudio(${products[item].id})">Stop Audio</button>
         <a href="#" class="checkout-button btn btn-dark d-flex align-items-center justify-content-center">Add to checkout</a>
       </div>
     </div>

@@ -10,7 +10,6 @@
 
 body{
     overflow-x: hidden;
-    background-color: black;
     
 
 }
@@ -131,6 +130,7 @@ main{
         width:18rem;
         height: 25rem;
 }
+
 
 body{
     @media (min-width: 300px) {    
