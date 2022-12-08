@@ -1,5 +1,5 @@
 let products = JSON.parse(localStorage.getItem("products "))
-  ? JSON.parse(localStorage.getItem("products "))
+  ? JSON.parse(localStorage.getItem("products"))
   : [
       {
         id: 1,
@@ -110,9 +110,20 @@ let products = JSON.parse(localStorage.getItem("products "))
         image: "/Assets/Imgs/Melody Kit img4.png",
         Audio: ""
       },
-      
-      
     ];
+
+// localStorage.setItem('products', JSON.stringify(products))
+
+
+// products = JSON.parse(localStorage.getItem('products'))
+
+// let newProducts = []
+// products.forEach(product => {
+//   if (product.id !== 5) {
+//     newProducts.push(product)
+//   }
+// })
+// localStorage.setItem('products', JSON.stringify(newProducts))
 
 // For admin
 function displayCards() {
