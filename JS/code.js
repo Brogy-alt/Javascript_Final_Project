@@ -52,9 +52,9 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 7,
-        style:"Yeat type beats",
+        style:"Central Cee type beat",
         product: "Beat",
-        beattype: " edm/melodic ",
+        beattype: "Drill",
         price: "$20",
         image: "/Assets/Imgs/yeat type beat img.jpg",
       },
@@ -68,6 +68,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 9,
+        style:"Spiral",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",
@@ -75,6 +76,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 10,
+        style:"Spiral",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",
@@ -82,6 +84,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 11,
+        style:"Spiral",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",
@@ -89,6 +92,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 12,
+        style:"Spiral",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",

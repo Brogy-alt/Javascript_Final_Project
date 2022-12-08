@@ -58,7 +58,7 @@ let products = JSON.parse(localStorage.getItem("products "))
       },
       {
         id: 7,
-        style:"Central Cee",
+        style:"Central Cee type beat",
         product: "Beat",
         beattype: "Drill",
         price: "$20",
@@ -76,34 +76,38 @@ let products = JSON.parse(localStorage.getItem("products "))
       },
       {
         id: 9,
+        style:"Spiral",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",
-        image: "",
+        image: "/Assets/Imgs/Melody Kit img.png",
         Audio: ""
       },
       {
         id: 10,
+        style:"Clouds",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",
-        image: "",
+        image: "/Assets/Imgs/Melody Kit img2.png",
         Audio: ""
       },
       {
         id: 11,
+        style:"Costal",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",
-        image: "",
+        image: "/Assets/Imgs/Melody Kit img5.png",
         Audio: ""
       },
       {
         id: 12,
+        style:"Invasion",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",
-        image: "",
+        image: "/Assets/Imgs/Melody Kit img4.png",
         Audio: ""
       },
       
@@ -126,9 +130,9 @@ function displayCards() {
         <p class="card-text">${products[item].beattype}</p>
         <p class="card-text">${products[item].price}</p>
         <audio src="..${products[item].Audio}" id="myAudio${products[item].id}"></audio>
-        <button class="myBtn" onClick="playMyAudio(${products[item].id})">Play Audio</button>
-        <button class="myBtn" onClick="stopMyAudio(${products[item].id})">Stop Audio</button>
-        <a href="#" class="btn btn-dark d-flex align-items-center justify-content-center">Add to checkout</a>
+        <button class="myBtn border-light bg-dark text-light" onClick="playMyAudio(${products[item].id})">Play Audio</button>
+        <button class="myBtn border-light bg-dark text-light" onClick="stopMyAudio(${products[item].id})">Stop Audio</button>
+        <a href="#" class="checkout-button btn btn-dark d-flex align-items-center justify-content-center">Add to checkout</a>
       </div>
     </div>
         `
