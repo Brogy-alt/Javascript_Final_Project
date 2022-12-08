@@ -8,7 +8,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         beattype: "melodic",
         price: "$20",
         image: "/Assets/Imgs/Juice wrld type beat img.jpg",
-        Audio: ""
+        Audio: "/Assets/Audio/Juicewrld.mp3"
         
       },
       {
@@ -125,7 +125,9 @@ function displayCards() {
         <p class="card-text">${products[item].product}</p>
         <p class="card-text">${products[item].beattype}</p>
         <p class="card-text">${products[item].price}</p>
-        <audio controls>${products[item].Audio}</audio>
+        <audio src="..${products[item].Audio}" id="myAudio${products[item].id}"></audio>
+        <button class="myBtn" onClick="playMyAudio(${products[item].id})">Play Audio</button>
+        <button class="myBtn" onClick="stopMyAudio(${products[item].id})">Stop Audio</button>
         <a href="#" class="btn btn-dark d-flex align-items-center justify-content-center">Add to checkout</a>
       </div>
     </div>
@@ -137,3 +139,11 @@ function displayCards() {
 displayCards();
 
 // localStorage.setItem('products', JSON.stringify(product-cards));
+function playMyAudio(id){
+  document.getElementById(`myAudio${id}`).play();
+}
+function stopMyAudio(id){
+  document.getElementById(`myAudio${id}`).pause();
+  document.getElementById(`myAudio${id}`).currentTime = 0;
+
+}
