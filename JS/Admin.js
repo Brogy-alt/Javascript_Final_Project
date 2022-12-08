@@ -4,7 +4,7 @@ JSON.parse(localStorage.getItem('products ')) : [
     
     {
         id: 1,
-        style: "Juice Wrld type beats",
+        style: "Juice Wrld type beat",
         product: "Beat",
         beattype: "melodic",
         price: "$20",
@@ -12,7 +12,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 2,
-        style:"Lil Uzi Vert type beats",
+        style:"Lil Uzi Vert type beat",
         product: "Beat",
         beattype: "hyper-pop",
         price: "$20",
@@ -20,7 +20,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 3,
-        style:"Trippie Redd type beats",
+        style:"Trippie Redd type beat",
         product: "Beat",
         beattype: "hyper-pop",
         price: "$20",
@@ -28,7 +28,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 4,
-        style:"Dro Kenji type beats",
+        style:"Dro Kenji type beat",
         product: "Beat",
         beattype: "melodic",
         price: "$20",
@@ -36,7 +36,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 5,
-        style:"Iann Dior type beats",
+        style:"Iann Dior type beat",
         product: "Beat",
         beattype: "melodic",
         price: "$20",
@@ -76,7 +76,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 10,
-        style:"Spiral",
+        style:"Clouds",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",
@@ -84,7 +84,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 11,
-        style:"Spiral",
+        style:"Costal",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",
@@ -92,7 +92,7 @@ JSON.parse(localStorage.getItem('products ')) : [
       },
       {
         id: 12,
-        style:"Spiral",
+        style:"Invasion",
         product: "Kit",
         beattype: "Melody kit",
         price: "$50",
@@ -111,6 +111,7 @@ let tbody = document.querySelector('tbody');
             `
                 <tr>
                     <td>${products[item].id}</td>
+                    <td>${products[item].style}</td>
                     <td>${products[item].product}</td>
                     <td>${products[item].beattype}</td>
                     <td>${products[item].price}</td>
