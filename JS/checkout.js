@@ -174,7 +174,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Invasion",
         product: "Kit",
         beattype: "Melody kit",
-        price: "$5",
+        price: "$55",
         image: "/Assets/Imgs/Melody Kit img4.png",
         Audio: "/Assets/Audio/invasion.mp3"
       },
@@ -188,7 +188,7 @@ let products = JSON.parse(localStorage.getItem("products "))
                 tbody.innerHTML +=
                 `
                 <tr>
-                <td><button>Add Product</button></td>
+                <td><button>Add</button></td>
                    <td>${products[item].style}</td>
                    <td>${products[item].beattype}</td>
                    <td>${products[item].price}</td>

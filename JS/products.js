@@ -106,7 +106,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Invasion",
         product: "Kit",
         beattype: "Melody kit",
-        price: "$5",
+        price: "$55",
         image: "/Assets/Imgs/Melody Kit img4.png",
         Audio: "/Assets/Audio/invasion.mp3"
       },
