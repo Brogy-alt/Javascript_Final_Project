@@ -123,6 +123,10 @@ main{
     width: 100vw;
 }
 
+.checkout{
+    height: 100vh;
+    width: 100vw;
+}
 
 .card-img-top{
         width:18rem;
@@ -137,5 +141,15 @@ body,header,footer{
         }
     }
 }
+
+h1,h2,h3,h4,h5,p,{
+    @media (min-width: 300px) {    
+        {
+            width: 100px
+        }
+
+    }
+}
+
 
 

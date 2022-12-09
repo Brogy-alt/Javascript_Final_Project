@@ -139,11 +139,10 @@ let tbody = document.querySelector('tbody');
 
 displayProducts();
 
+// sorting
 
-// remove
-
-function remove(products){
-  
-}
+// let displayProducts = [];
+// products.sort((a, b) => a - b);
+// console.log(products);
 
 
