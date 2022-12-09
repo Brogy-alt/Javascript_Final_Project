@@ -16,7 +16,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Lil Uzi Vert type beat",
         product: "Beat",
         beattype: "hyper-pop",
-        price: "$20",
+        price: "$15",
         image: "/Assets/Imgs/lil uzi vert type beat.jpg",
         Audio: "/Assets/Audio/Lil uzi vert.mp3"
       },
@@ -25,7 +25,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Trippie Redd type beat",
         product: "Beat",
         beattype: "hyper-pop",
-        price: "$20",
+        price: "$19",
         image: "/Assets/Imgs/Trippie redd type beat.jpg",
         Audio: "/Assets/Audio/Trippie Redd.mp3"
       },
@@ -34,7 +34,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Dro Kenji type beat",
         product: "Beat",
         beattype: "melodic",
-        price: "$20",
+        price: "$18",
         image: "/Assets/Imgs/dro kenji type beat.jpg",
         Audio: "/Assets/Audio/Dro kenji.mp3"
       },
@@ -43,7 +43,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Iann Dior type beat",
         product: "Beat",
         beattype: "melodic",
-        price: "$20",
+        price: "$15",
         image: "/Assets/Imgs/Iann doir type beat.jpg",
         Audio: "/Assets/Audio/Iann dior.mp3"
       },
@@ -52,7 +52,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Lil Yatchy type beat ",
         product: "Beat",
         beattype: "melodic",
-        price: "$20",
+        price: "$16",
         image: "/Assets/Imgs/lil yatchy type beat.jpg",
         Audio: "/Assets/Audio/Lil yatchy.mp3"
       },
@@ -61,7 +61,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Central Cee type beat",
         product: "Beat",
         beattype: "Drill",
-        price: "$20",
+        price: "$17",
         image: "/Assets/Imgs/Central cee.jpg",
         Audio: "/Assets/Audio/Central Cee.mp3"
       },
@@ -70,7 +70,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"SSG Kobe type beat",
         product: "Beat",
         beattype: "hyperpop",
-        price: "$20",
+        price: "$17",
         image: "/Assets/Imgs/SSG Kobe type beat.jpg",
         Audio: "/Assets/Audio/SSG kobe.mp3"
       },
@@ -79,7 +79,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Spiral",
         product: "Kit",
         beattype: "Midi kit",
-        price: "$50",
+        price: "$45",
         image: "/Assets/Imgs/Melody Kit img.png",
         Audio: "/Assets/Audio/spiral.mp3"
       },
@@ -97,7 +97,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Costal",
         product: "Kit",
         beattype: "Melody kit",
-        price: "$50",
+        price: "$35",
         image: "/Assets/Imgs/Melody Kit img5.png",
         Audio: "/Assets/Audio/costal.mp3"
       },
@@ -106,7 +106,7 @@ let products = JSON.parse(localStorage.getItem("products "))
         style:"Invasion",
         product: "Kit",
         beattype: "Melody kit",
-        price: "$50",
+        price: "$5",
         image: "/Assets/Imgs/Melody Kit img4.png",
         Audio: "/Assets/Audio/invasion.mp3"
       },
@@ -134,7 +134,7 @@ function displayCards() {
       card.innerHTML += 
       ` 
       <div class="card col-3 text-light bg-black border-dark">
-      <img src="${products[item].image}" class="card-img-top" alt="...">
+      <img src="${products[item].image}" class="card-img-top img-fluid" alt="...">
       <div class="card-body">
         <h5 class="card-title">${products[item].style}</h5>
         <p class="card-text">${products[item].product}</p>
