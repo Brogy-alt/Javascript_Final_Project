@@ -1,7 +1,7 @@
 // Sample data: example
-let products = JSON.parse(localStorage.getItem('products ')) ?
-JSON.parse(localStorage.getItem('products ')) : [
-    
+let products = JSON.parse(localStorage.getItem('products')) ?
+JSON.parse(localStorage.getItem('products')) : [
+  
   {
     id: 1,
     style: "Juice Wrld type beat",
@@ -128,7 +128,7 @@ let tbody = document.querySelector('tbody');
                     <td>${products[item].product}</td>
                     <td>${products[item].beattype}</td>
                     <td>${products[item].price}</td>
-                    <td><button>Edit</button> <button class="onClick">Delete</button></td>
+                    <td><button>Edit</button> <button class="onClick" onclick='del()'>Delete</button></td>
 
                 </tr>
             `
@@ -145,4 +145,18 @@ displayProducts();
 // products.sort((a, b) => a - b);
 // console.log(products);
 
+let delButton = document.querySelectorAll('.onClick');
+
+console.log(delButton);
+
+for (let button of delButton){
+  button.addEventListener('click', del)
+  
+}
+
+function del(){
+  let item = JSON.parse(localStorage.getItem('products')) 
+  localStorage.removeItem(products[item])
+  
+}
 
