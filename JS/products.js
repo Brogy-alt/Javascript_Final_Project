@@ -126,13 +126,15 @@ let products = JSON.parse(localStorage.getItem("products "))
 // localStorage.setItem('products', JSON.stringify(newProducts))
 
 // For admin
+
+
 function displayCards() {
   let card = document.querySelector('#card-row');
   Object.keys(products).forEach((item) => {
     if (products.length) {
       console.log(`${item}: ${products[item]}`);
       card.innerHTML += 
-      ` 
+      `
       <div class="card col-3 text-light bg-black border-dark">
       <img src="${products[item].image}" class="card-img-top img-fluid" alt="...">
       <div class="card-body">
@@ -144,8 +146,10 @@ function displayCards() {
         <button class="myBtn bg-dark text-light" onClick="playMyAudio(${products[item].id})">Play Audio</button>
         <button class="myBtn bg-dark text-light float-md-end" onClick="stopMyAudio(${products[item].id})">Stop Audio</button>
         <a href="/Html/checkout.html" class="checkout-button btn btn-dark d-flex align-items-center justify-content-center">Add to checkout</a>
-      </div>
+        
+        </div>
     </div>
+    
         `
     }
   });

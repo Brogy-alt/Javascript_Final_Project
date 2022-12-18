@@ -145,11 +145,21 @@ body,header,footer{
 h1,h2,h3,h4,h5,p,{
     @media (min-width: 300px) {    
         {
-            width: 100px
+            width: 100%
         }
 
     }
 }
+
+card.text {
+    @media (min-width: 300px) {
+        {
+            width: 100%
+        }
+        
+    }
+}
+
 
 
 
